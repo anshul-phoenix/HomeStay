@@ -1,11 +1,40 @@
-<div align="center">
+# Nigam Homestay - WhatsApp Booking Site
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A modern, mobile-first homestay landing page built with Next.js 14 (App Router) and Tailwind CSS.
 
-  <h1>Built with AI Studio</h2>
+## Features
+- **Zero Backend**: All data is config-driven via `constants.ts`.
+- **WhatsApp Integration**: Direct booking inquiries sent to WhatsApp.
+- **Mobile First**: Fully responsive design.
+- **Static Export**: Ready for free hosting on Netlify, Vercel, or Cloudflare Pages.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Project Structure
+- `app/`: Next.js App Router pages and layout.
+- `components/`: Reusable React components.
+- `constants.ts`: Configuration for text, prices, and images.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Development
 
-</div>
+```bash
+npm install
+npm run dev
+```
+
+## Deployment (Static Export)
+
+This project is configured for `next export` (via `output: 'export'` in `next.config.mjs`).
+
+1. **Build the project:**
+   ```bash
+   npm run build
+   ```
+
+2. **Output:**
+   The static files will be generated in the `out/` directory.
+
+3. **Deploy to Netlify/Cloudflare:**
+   - **Build Command:** `npm run build`
+   - **Publish Directory:** `out`
+
+## Customization
+Edit `constants.ts` to change the homestay name, phone number, pricing, or images.
