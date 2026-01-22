@@ -7,13 +7,10 @@ const Features: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-earth-900 mb-4">
-            Facilities <br/>
-            <span className="text-2xl text-earth-700">सुविधाएं</span>
+            Facilities
           </h2>
           <p className="text-earth-600 max-w-2xl mx-auto">
             Everything for a comfortable stay.
-            <br/>
-            आरामदायक प्रवास के लिए सब कुछ।
           </p>
         </div>
 

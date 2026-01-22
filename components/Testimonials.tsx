@@ -24,11 +24,21 @@ const Testimonials: React.FC = () => {
             <div key={review.id} className="bg-white p-8 rounded-2xl shadow-sm border border-earth-100 relative">
               <Quote className="absolute top-6 right-6 text-brand-100 w-10 h-10 rotate-180" />
               <div className="flex items-center gap-4 mb-6">
-                <img 
-                  src={review.avatar} 
-                  alt={review.name} 
-                  className="w-12 h-12 rounded-full object-cover"
-                />
+                {review.avatar ? (
+                  <img 
+                    src={review.avatar} 
+                    alt={review.name} 
+                    className="w-12 h-12 rounded-full object-cover shadow-sm"
+                  />
+                ) : (
+                  <div 
+                    className={`w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-sm ${
+                      ['bg-orange-500', 'bg-blue-500', 'bg-green-500', 'bg-purple-500', 'bg-amber-500'][review.id.charCodeAt(review.id.length - 1) % 5]
+                    }`}
+                  >
+                    {review.name.split(' ').map(n => n[0]).join('').substring(0, 2)}
+                  </div>
+                )}
                 <div>
                   <h4 className="font-bold text-earth-900">{review.name}</h4>
                   <p className="text-xs text-earth-500 uppercase tracking-wide">{review.date}</p>
@@ -42,6 +52,17 @@ const Testimonials: React.FC = () => {
               <p className="text-earth-600 italic leading-relaxed">"{review.comment}"</p>
             </div>
           ))}
+        </div>
+        <div className="mt-16 text-center">
+          <a
+            href="https://www.google.com/travel/search?q=shivnandani&hl=en-IN&gl=in&cs=1&ssta=1&ap=ugEHcmV2aWV3cw"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-white hover:bg-earth-50 text-earth-900 px-6 py-3 rounded-full font-bold shadow-md border border-earth-100 transition-all hover:scale-105"
+          >
+            <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
+            See All Google Reviews
+          </a>
         </div>
       </div>
     </section>

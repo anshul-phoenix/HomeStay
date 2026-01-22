@@ -5,6 +5,7 @@ import FestivalBanner from './components/FestivalBanner';
 import Gallery from './components/Gallery';
 import Rooms from './components/Rooms';
 import Features from './components/Features';
+import Testimonials from './components/Testimonials';
 import Location from './components/Location';
 import Footer from './components/Footer';
 import { MessageCircle } from 'lucide-react';
@@ -21,6 +22,7 @@ function App() {
         <Gallery />
         <Rooms />
         <Features />
+        <Testimonials />
         <Location />
       </main>
       

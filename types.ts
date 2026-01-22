@@ -36,6 +36,33 @@ export interface Room {
   price: number;
   description: string;
   image: string;
+  images?: string[];
   capacity: number;
   features: string[];
+  roomSize?: string;
+  bedType?: string;
+  amenities?: {
+    bathroom?: string[];
+    comfort?: string[];
+    entertainment?: string[];
+    kitchen?: string[];
+    safety?: string[];
+  };
+}
+
+export interface Landmark {
+  name: string;
+  distance: string;
+  icon: string;
+}
+
+export interface ContactConfig {
+  address: string;
+  googleMapsEmbedUrl: string;
+  locationTitle: string;
+  locationSubtitle: string;
+  landmarks: Landmark[];
+  checkoutTime?: string;
+  policies?: string[];
+  googleMapsRedirectUrl?: string;
 }

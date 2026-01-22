@@ -16,24 +16,17 @@ const Footer: React.FC = () => {
             </div>
             <p className="text-earth-400 leading-relaxed text-sm">
               Authentic homestay experience near Mahakaleshwar Temple. Simple, clean, and family-friendly.
-              <br/>
-              महाकालेश्वर मंदिर के पास प्रामाणिक होमस्टे। सरल, स्वच्छ और पारिवारिक।
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-white font-bold text-lg mb-4">Menu / मेनू</h3>
+            <h3 className="text-white font-bold text-lg mb-4">Menu</h3>
             <ul className="space-y-2 text-sm">
-              {[
-                { en: 'Home', hi: 'होम' }, 
-                { en: 'Rooms', hi: 'कमरे' }, 
-                { en: 'Facilities', hi: 'सुविधाएं' }, 
-                { en: 'Location', hi: 'पता' }
-              ].map(link => (
-                <li key={link.en}>
-                  <a href={`#${link.en.toLowerCase()}`} className="hover:text-orange-400 transition-colors">
-                    {link.en} / {link.hi}
+              {['Home', 'Rooms', 'Facilities', 'Location'].map(link => (
+                <li key={link}>
+                  <a href={`#${link.toLowerCase()}`} className="hover:text-orange-400 transition-colors">
+                    {link}
                   </a>
                 </li>
               ))}
@@ -42,7 +35,7 @@ const Footer: React.FC = () => {
 
           {/* Contact */}
           <div>
-            <h3 className="text-white font-bold text-lg mb-4">Contact / संपर्क</h3>
+            <h3 className="text-white font-bold text-lg mb-4">Contact</h3>
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-orange-500 shrink-0 mt-1" />

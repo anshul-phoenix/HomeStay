@@ -8,11 +8,10 @@ const Gallery: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div className="mb-6 md:mb-0">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-earth-900 mb-4">
-              Gallery <br/>
-              <span className="text-2xl text-earth-700">तस्वीरें</span>
+              Gallery
             </h2>
             <p className="text-earth-600 max-w-md">
-              A glimpse of your stay. / आपके प्रवास की एक झलक।
+              A glimpse of your stay.
             </p>
           </div>
         </div>
