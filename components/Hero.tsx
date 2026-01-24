@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { MessageCircle, ArrowDown } from 'lucide-react';
 import { WHATSAPP_NUMBER, BOOKING_MESSAGE, HERO_CONFIG } from '../constants';

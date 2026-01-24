@@ -4,16 +4,17 @@ import { Amenity, GalleryImage, Testimonial, Room } from './types';
 // --- CONFIGURATION START ---
 
 // 1. Identity & Contact
-export const HOMESTAY_NAME = "Hotel Shivnandani";
+export const HOMESTAY_NAME = "Hotel Shivnandani Palace";
 export const WHATSAPP_NUMBER = "918109494267"; 
 export const PHONE_NUMBER = "+91 81094 94267";
 export const CURRENCY = "₹";
+export const DOMAIN = "hotelshivnandanipalace.com";
 
-// 2. Hero Section Config
+// 2. Hero Section Config (SEO Optimized)
 export const HERO_CONFIG = {
-  tagline: "Rated 4.9★ on Google",
-  headline: "Your Home Near\nMahakal Temple",
-  subtext: "Just 500m from Mahakaleshwar Temple Corridor. Clean, comfortable rooms with exceptional hospitality by Mr. Deepesh."
+  tagline: "Rated 4.9★ on Google • Best Budget Guest House",
+  headline: "Hotel Shivnandani Palace\nNear Mahakal Temple",
+  subtext: "Rooms starting from ₹2099. Experience comfort and heritage at Hotel Shivnandani Palace. Just 200m from temple exit. Clean AC rooms & Secure parking. Book now!"
 };
 
 // 3. Contact & Location Config
@@ -21,27 +22,30 @@ export const CONTACT_CONFIG = {
   address: "No 116, Choubis Khamba Marg, Harsiddhi Road, Near Mahakaleshwar Mandir, Harsiddhi Gate, Ujjain - 456006, Madhya Pradesh",
   googleMapsEmbedUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d229.2248202789172!2d75.7699537!3d23.1848997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3963759b18bb4b37%3A0xdd0d2e6ec7c4bc89!2sShivnandani!5e0!3m2!1sen!2sin!4v1769090267433!5m2!1sen!2sin",
   googleMapsRedirectUrl: "https://maps.app.goo.gl/LBSGGBnZtAzVFeBs5",
-  locationTitle: "Prime Location Near Major Temples",
-  locationSubtitle: "Walking distance from all major tourist attractions",
+  locationTitle: "Walking Distance from Major Temples",
+  locationSubtitle: "Perfectly located for Bhasma Aarti and Temple Darshan",
   landmarks: [
-    { name: "Mahakaleshwar Temple", distance: "240 m", icon: "temple" },
-    { name: "Gopal Mandir Temple", distance: "380 m", icon: "temple" },
-    { name: "Harsiddhi Mandir", distance: "540 m", icon: "temple" },
-    { name: "Ram Ghat Kshira River", distance: "600 m", icon: "temple" },
+    { name: "Mahakaleshwar Temple", distance: "200 m", icon: "temple" },
+    { name: "Mahakal Lok Nandi Dwar", distance: "240 m", icon: "temple" },
+    { name: "Harsiddhi Mata Mandir", distance: "540 m", icon: "temple" },
+    { name: "Ram Ghat (Shipra River)", distance: "600 m", icon: "temple" },
     { name: "Ujjain Railway Station", distance: "1.2 km", icon: "train" },
-    { name: "Gadkalika Temple", distance: "2.2 km", icon: "temple" }
+    { name: "Kal Bhairav Temple", distance: "4.5 km", icon: "temple" },
+    { name: "Mangalnath Temple", distance: "5.2 km", icon: "temple" },
+    { name: "Sandipani Ashram", distance: "4.8 km", icon: "temple" }
   ],
   checkoutTime: "9:00 AM",
-  policies: ["ID Proof is mandatory for all guests"]
+  policies: ["ID Proof is mandatory for all guests", "Smoking is prohibited in rooms"]
 };
 
 // 4. Festival Banner Config
 export const SHOW_FESTIVAL_BANNER = true;
-export const FESTIVAL_BANNER_TEXT = "Book Now! Limited rooms available near Mahakal Temple.";
+export const FESTIVAL_BANNER_TEXT = "Special Offer: 10% Discount on 3+ nights stay. Book now for Bhasma Aarti!";
 
 // 5. WhatsApp Message Template
 export const BOOKING_MESSAGE = `Hello,
 I would like to book a room at ${HOMESTAY_NAME}.
+Room Type:
 Guests:
 Check-in date:
 Number of nights:`;
@@ -50,40 +54,40 @@ Number of nights:`;
 export const ROOMS: Room[] = [
   {
     id: 'deluxe',
-    name: 'Deluxe Double Room with Extra Bed',
+    name: 'Three-Bed Deluxe AC Room',
     price: 2099,
-    description: 'Beautifully designed 13m² room with queen bed, landmark view, private bathroom with bathtub, AC, TV, and all modern amenities. Perfect for couples or small families.',
+    description: 'Perfect for families or groups of 3. Features 1 Queen bed + 1 Single bed, AC, and private bathroom with geyser. High hygiene standards and landmark view.',
     image: '/deluxe-room-1.jpg',
     images: ['/deluxe-room-1.jpg', '/deluxe-room-2.jpg', '/deluxe-room-3.jpg'],
     capacity: 3,
     roomSize: '13 m² / 140 ft²',
-    bedType: '1 Queen Bed + Extra Bed',
-    features: ['Air Conditioning', 'Free Wi-Fi', 'Queen Bed', 'Bathtub', 'TV', 'Landmark View'],
+    bedType: '1 Queen Bed + 1 Single Bed',
+    features: ['Air Conditioning', 'High-speed Wi-Fi', '24h Hot Water', 'Bathtub', 'Landmark View', 'Daily Housekeeping'],
     amenities: {
-      bathroom: ['Bathtub', 'Shower', 'Private Bathroom', 'Hair Dryer', 'Toiletries', 'Towels', 'Additional Toilet'],
-      comfort: ['Air Conditioning', 'Fan', 'Heating', 'Linens', 'Slippers', 'Socket Near Bed', 'Wake-up Service', 'Private Entrance', 'Hand Sanitizer'],
-      entertainment: ['TV'],
-      kitchen: ['Electric Kettle', 'Free Bottled Water'],
-      safety: ['Smoke Detector', 'Fire Extinguisher', 'Accessible by Stairs']
+      bathroom: ['Bathtub', 'Shower', 'Private Bathroom', 'Geyser/Hot Water', 'Toiletries', 'Towels'],
+      comfort: ['Air Conditioning', 'Fan', 'Linens', 'Socket Near Bed', 'Wake-up Service'],
+      entertainment: ['LED TV with Cable'],
+      kitchen: ['Free Bottled Water', 'Tea/Coffee Maker on demand'],
+      safety: ['Smoke Detector', 'Fire Extinguisher']
     }
   },
   {
     id: 'family',
-    name: 'Family Room with Private Bathroom',
+    name: 'Six-Bed Super Family AC Room',
     price: 2999,
-    description: 'Spacious 16m² family room with 2 queen beds, private balcony, bathtub, landmark view, in-room safe, and all premium amenities. Perfect for larger families.',
+    description: 'Large 6-bed room ideal for group pilgrims. Features 3 Double beds, private balcony, and spacious area. Closest family stay at Shivnandani Palace.',
     image: '/family-room-1.jpg',
     images: ['/family-room-1.jpg', '/family-room-2.jpg', '/family-room-3.jpg', '/family-room-bathroom.jpg'],
     capacity: 6,
-    roomSize: '16 m² / 172 ft²',
-    bedType: '2 Queen Beds (Extra Long)',
-    features: ['Air Conditioning', 'Balcony/Terrace', '2 Queen Beds', 'Bathtub', 'TV', 'In-Room Safe'],
+    roomSize: '18 m² / 195 ft²',
+    bedType: '3 Double Beds',
+    features: ['Air Conditioning', 'Private Balcony', 'Secure Parking', 'LCD TV', 'In-Room Safe', 'Doctor on Call'],
     amenities: {
-      bathroom: ['Bathtub', 'Shower', 'Private Bathroom', 'Hair Dryer', 'Toiletries', 'Towels', 'Additional Toilet'],
-      comfort: ['Air Conditioning', 'Fan', 'Heating', 'Linens', 'Slippers', 'Socket Near Bed', 'Wake-up Service', 'Private Entrance', 'Hand Sanitizer'],
-      entertainment: ['TV'],
-      kitchen: ['Electric Kettle', 'Free Bottled Water'],
-      safety: ['Smoke Detector', 'Fire Extinguisher', 'In-Room Safe Box', 'Accessible by Stairs']
+      bathroom: ['Shower', 'Private Bathroom', 'Geyser', 'Toiletries', 'Towels'],
+      comfort: ['Air Conditioning', 'Fan', 'Linens', 'Socket Near Bed', 'Wake-up Service', 'Luggage Storage'],
+      entertainment: ['LCD TV'],
+      kitchen: ['Free Bottled Water'],
+      safety: ['In-Room Safe Box', 'Fire Extinguisher']
     }
   }
 ];
@@ -93,38 +97,38 @@ export const ROOMS: Room[] = [
 export const AMENITIES: Amenity[] = [
   {
     id: 'location',
-    name: 'Prime Location',
-    description: '500m from Mahakal Temple',
+    name: 'Closest to Mahakal',
+    description: '200m from Temple Exit',
     Icon: MapPin
   },
   {
     id: 'wifi',
-    name: 'Free Wi-Fi',
-    description: 'High speed internet',
+    name: 'High-speed Wi-Fi',
+    description: 'Work or Stream with ease',
     Icon: Wifi
   },
   {
     id: 'parking',
-    name: 'Free Parking',
-    description: 'Secure vehicle parking',
+    name: 'Secure Parking',
+    description: 'Dedicated space for cars',
     Icon: Car
   },
   {
     id: 'ac',
-    name: 'Air Conditioning',
-    description: 'All rooms fully AC',
+    name: 'Full Air Conditioning',
+    description: 'Powerful cooling in all rooms',
     Icon: Wind
   },
   {
     id: 'clean',
-    name: 'Enhanced Cleaning',
-    description: 'Daily housekeeping',
+    name: 'Hygiene First',
+    description: 'Daily sanitization',
     Icon: Sparkles
   },
   {
     id: 'host',
-    name: 'Helpful Host',
-    description: 'Local tour guidance',
+    name: 'Pilgrim Guidance',
+    description: 'Expert local tour help',
     Icon: Users
   }
 ];

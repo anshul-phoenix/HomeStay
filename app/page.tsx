@@ -1,10 +1,13 @@
-import React from 'react';
+'use client';
+
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import FestivalBanner from '../components/FestivalBanner';
 import Gallery from '../components/Gallery';
 import Rooms from '../components/Rooms';
 import Features from '../components/Features';
+import Testimonials from '../components/Testimonials';
+import FAQSection from '../components/FAQSection';
 import Location from '../components/Location';
 import Footer from '../components/Footer';
 import { MessageCircle } from 'lucide-react';
@@ -12,7 +15,7 @@ import { WHATSAPP_NUMBER, BOOKING_MESSAGE } from '../constants';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-earth-50">
+    <div className="min-h-screen bg-earth-50 scroll-smooth">
       <Navbar />
       
       <main>
@@ -21,6 +24,8 @@ export default function Home() {
         <Gallery />
         <Rooms />
         <Features />
+        <Testimonials />
+        <FAQSection />
         <Location />
       </main>
       

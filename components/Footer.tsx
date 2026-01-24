@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { Home, Instagram, Facebook, Phone, MapPin } from 'lucide-react';
 import { HOMESTAY_NAME, WHATSAPP_NUMBER, CONTACT_CONFIG } from '../constants';
@@ -15,7 +17,7 @@ const Footer: React.FC = () => {
               <span>{HOMESTAY_NAME}</span>
             </div>
             <p className="text-earth-400 leading-relaxed text-sm">
-              Authentic homestay experience near Mahakaleshwar Temple. Simple, clean, and family-friendly.
+              Experience the heritage and spirit of Ujjain at Hotel Shivnandani Palace. Premium budget stay just 200m from Mahakal Temple.
             </p>
           </div>
 

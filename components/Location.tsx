@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { MapPin, Train, LandPlot, Clock, ShieldCheck, AlertCircle } from 'lucide-react';
 import { HOMESTAY_NAME, CONTACT_CONFIG } from '../constants';

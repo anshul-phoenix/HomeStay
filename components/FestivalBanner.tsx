@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { Sparkles, Bell } from 'lucide-react';
 import { SHOW_FESTIVAL_BANNER, FESTIVAL_BANNER_TEXT } from '../constants';

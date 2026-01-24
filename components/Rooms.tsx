@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { MessageCircle, Check, Maximize2, Bed, ChevronLeft, ChevronRight } from 'lucide-react';
 import { ROOMS, CURRENCY, WHATSAPP_NUMBER, BOOKING_MESSAGE } from '../constants';
@@ -90,14 +92,23 @@ const Rooms: React.FC = () => {
                 </div>
                 
                 <div className="p-6 flex flex-col flex-grow">
-                  <div className="mb-3">
-                    <h3 className="text-xl font-bold text-earth-900">{room.name}</h3>
-                    {room.bedType && (
-                      <div className="flex items-center gap-1.5 text-sm text-earth-600 mt-1">
-                        <Bed className="w-4 h-4" />
-                        <span>{room.bedType}</span>
+                  <div className="mb-3 flex justify-between items-start">
+                    <div>
+                      <h3 className="text-xl font-bold text-earth-900">{room.name}</h3>
+                      {room.bedType && (
+                        <div className="flex items-center gap-1.5 text-sm text-earth-600 mt-1">
+                          <Bed className="w-4 h-4" />
+                          <span>{room.bedType}</span>
+                        </div>
+                      )}
+                    </div>
+                    <div className="text-right">
+                      <div className="text-earth-500 text-xs uppercase font-bold tracking-wider">Starts from</div>
+                      <div className="text-2xl font-bold text-brand-600">
+                        {CURRENCY}{room.price}
                       </div>
-                    )}
+                      <div className="text-earth-400 text-[10px]">per night</div>
+                    </div>
                   </div>
                   
                   <p className="text-earth-600 text-sm mb-4 leading-relaxed">
